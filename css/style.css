@@ -1,0 +1,654 @@
+@font-face {
+  font-family: "Original Garamond BT";
+  src: url("../fonts/Original-Garamond-BT.ttf") format("ttf");
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  color: #483930;
+  font-size: 17px;
+  line-height: 20px;
+  background-image: url("../img/background.png");
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+/*  FONTS, BACKGROUNDS */
+.header-nav__list a {
+  color: #483930;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contacts__address {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.contacts__phone {
+  font-size: 31px;
+  color: #483930;
+  font-weight: 700;
+}
+
+.promo__slide {
+  background-image: url("../img/promo.jpg");
+  min-height: 325px;
+  padding-top: 225px;
+}
+
+.promo__slogan {
+  font-family: "Original Garamond BT";
+  font-size: 48px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+}
+
+.promo__text {
+  text-align: center;
+  color: #c3a885;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.services__item a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #483930;
+}
+
+.services__subitem  a{
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #483930;
+}
+
+.description__text {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.footer {
+  background-color: #dac9b3;
+}
+
+.footer__address {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer__phone {
+  font-size: 27px;
+  color: #483930;
+  font-weight: 600;
+}
+
+.footer__hours {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-nav__item {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.footer-nav__item a {
+  color: #483930;
+}
+
+/* GRIDS */
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 385px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.header-nav__list::before {
+  content: "";
+  position: absolute;
+  width: 402px;
+  height: 2px;
+  background-color: #c3a885;
+  left: -10px;
+  bottom: 45px;
+}
+
+.header-nav__item-price,
+.header-nav__item-registration {
+  margin-right: 20px;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-top: -35px;
+  margin-bottom: 40px;
+}
+
+.promo {
+  margin-bottom: 30px;
+}
+
+.services {
+  margin-bottom: 30px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 132px;
+  padding-right: 34px;
+  position: relative;
+}
+
+.services__item {
+  margin-top: 13px;
+}
+
+.services__sublist {
+  margin-top: 18px;
+  margin-bottom: 40px;
+}
+
+.services__sublist--therapy,
+.services__sublist--prosthetics {
+  margin-top: 10px;
+}
+
+.services__sublist--paradontologie {
+  margin-top: 10px;
+}
+
+.services__sublist--prosthetics {
+  width: 140px;
+}
+
+.services__item--therapy,
+.services__item--prosthetics {
+  width: 262px;
+  margin-right: 10px;
+}
+
+.services__item--therapy::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/svg/therapy-icon.svg");
+  left: 35px;
+  top: 0;
+}
+
+.services__item--hygiene,
+.services__item--surgery,
+.services__item--orthodontics,
+.services__item--paradontologie {
+  width: 270px;
+}
+
+.services__item--hygiene::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/svg/hygiene-icon.svg");
+  left: 402px;
+  top: 0;
+}
+
+.services__item--surgery::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/svg/surgery-icon.svg");
+  right: 333px;
+  top: 0;
+}
+
+.services__item--prosthetics::before,
+.services__item--orthodontics::before,
+.services__item--paradontologie::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  bottom: 138px;
+}
+
+.services__item--prosthetics::before {
+  background-image: url("../img/svg/prosthetics-icon.svg");
+  left: 35px;
+}
+
+.services__item--orthodontics::before {
+  background-image: url("../img/svg/orthodontics-icon.svg");
+  left: 402px;
+}
+
+.services__item--paradontologie::before {
+  background-image: url("../img/svg/paradontologie-icon.svg");
+  right: 333px;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.description__block {
+  width: 532px;
+}
+
+.footer__wrapper-one {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  width: 358px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  margin-left: 35px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+.footer__marker {
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.popup-map--nojs {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__address {
+  width: 305px;
+  padding-top: 30px;
+  margin-right: 125px;
+}
+
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-button {
+  margin-right: 16px;
+}
+
+.social-button:hover {
+  opacity: 0.7;
+}
+
+.social-button:active {
+  opacity: 0.3;
+}
+
+.footer__social {
+  padding-top: 20px;
+}
+
+.footer__social li:first-child {
+  margin-left: 30px;
+}
+
+.footer__wrapper-two {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav__list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.button-reg {
+  width: 237px;
+  margin-left: 44px;
+  margin-right: 130px;
+  color: #e6ddd3;
+  background-color: #483930;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  border: 3px solid #e6ddd3;
+  text-align: center;
+  max-height: 65px;
+  padding-top: 25px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 390px;
+  margin-right: 120px;
+}
+
+.footer__phone {
+  margin-top: 35px;
+  margin-right: 30px;
+}
+
+.footer__hours {
+  margin-top: 25px;
+}
+
+.footer-nav__list {
+  margin-bottom: 15px;
+}
+
+.footer-nav__item {
+  margin-bottom: 3px;
+}
+
+/* POP-UP */
+.popup {
+  position: fixed;
+  width: 960px;
+  margin: 0 auto;
+  margin-left: -480px;
+  left: 50%;
+  bottom: 10px;
+  background-color: #fff;
+  z-index: 30;
+  box-shadow: 5px 0 20px rgba(4, 6, 6, 0.2),
+              0 10px 20px rgba(4, 6, 6, 0.2),
+              -5px 0 20px rgba(4, 6, 6, 0.2);
+  display: none;
+}
+
+.popup-map {
+  bottom: 200px;
+  line-height: 0;
+  display: none;
+}
+
+.popup-close {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  top: 22px;
+  right: 22px;
+  background-color: #dac9b3;
+  border-radius: 50%;
+  opacity: 0.5;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup-close::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  left: 12px;
+  top: 50%;
+}
+
+.popup-close::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  left: 12px;
+  top: 50%;
+}
+
+.popup-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-close::after{
+  transform: rotate(-45deg);
+}
+
+.popup-close:hover {
+  opacity: 1;
+}
+
+.popup-close:focus {
+  opacity: 1;
+}
+
+.popup-close:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.popup-register {
+  top: 20px;
+  line-height: 0;
+  width: 560px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  left: 60%;
+  overflow: auto;
+}
+
+.popup__form {
+  padding-top: 25px;
+  padding-bottom: 75px;
+  width: 100%;
+}
+
+.popup__heading {
+  text-align: center;
+}
+
+.popup__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup__field {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #f2f2f2;
+  border: none;
+  opacity: 0.5;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 530px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.popup__doctors {
+  width: 560px;
+  height: 50px;
+  margin-top: 15px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.popup__doctors option {
+  font-size: 18px;
+}
+
+.popup__field:hover,
+.popup__field:focus {
+  background-color: #eaeaea;
+  opacity: 0.8;
+}
+
+.popup__field:focus-within {
+  background-color: #ffffff;
+  opacity: 1;
+  outline: none;
+  outline: 3px solid #f7e296;
+}
+
+.popup__field:invalid {
+  background-color: #f6dada;
+  opacity: 0.4;
+}
+
+.popup__textarea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #f2f2f2;
+  border: none;
+  opacity: 0.5;
+  resize: none;
+  width: 538px;
+  height: 155px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.popup__textarea:hover,
+.popup__textarea:focus {
+  background-color: #eaeaea;
+  opacity: 0.8;
+}
+
+.popup__textarea:focus-within {
+  background-color: #ffffff;
+  opacity: 1;
+  outline: none;
+  outline: 3px solid #f7e296;
+}
+
+.popup__textarea:invalid {
+  background-color: #f6dada;
+  opacity: 0.4;
+}
+
+.button-popup {
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+  display: block;
+  width: 200px;
+  color: #000000;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent 19px, #c3a885 19px, #c3a885 27px, transparent 27px);
+}
+
+.button-popup:hover,
+.button-popup:focus {
+  background-image: none;
+  background-color: #c3a885;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.popup-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.7s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.popup-error {
+  animation-name: shake;
+  animation-duration: 0.7s;
+}
