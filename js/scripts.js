@@ -1,9 +1,15 @@
 /* MAP */
 var buttonMap = document.querySelector(".footer__marker");
+var linkMap = document.querySelector(".footer__address");
 var popupMap = document.querySelector(".popup-map");
 var closeMap = popupMap.querySelector(".popup-close");
 
   buttonMap.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popupMap.classList.add("popup-show");
+  });
+
+  linkMap.addEventListener("click", function(evt) {
     evt.preventDefault();
     popupMap.classList.add("popup-show");
   });

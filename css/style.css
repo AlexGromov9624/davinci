@@ -57,6 +57,15 @@ input[type="radio"].visually-hidden {
   font-weight: 600;
 }
 
+.header-nav__item a:hover,
+.header-nav__item a:focus {
+  color: #ffa405;
+}
+
+.header-nav__item a:active {
+  color: #b86500;
+}
+
 .contacts__address {
   font-size: 15px;
   font-weight: 600;
@@ -205,6 +214,15 @@ input[type="radio"].visually-hidden {
   margin-top: 13px;
 }
 
+.services__item a:hover,
+.services__item a:focus {
+  color: #ffa405;
+}
+
+.services__item a:active {
+  color: #cb8e44;
+}
+
 .services__sublist {
   margin-top: 18px;
   margin-bottom: 40px;
@@ -221,6 +239,15 @@ input[type="radio"].visually-hidden {
 
 .services__sublist--prosthetics {
   width: 140px;
+}
+
+.services__subitem a:hover,
+.services__subitem a:focus {
+  color: #d4ab69;
+}
+
+.services__subitem a:active {
+  color: #b08655;
 }
 
 .services__item--therapy,
@@ -329,8 +356,18 @@ input[type="radio"].visually-hidden {
 
 .footer__address {
   width: 305px;
-  padding-top: 30px;
+  padding-top: 45px;
   margin-right: 125px;
+  color: #65564a;
+}
+
+.footer__address:hover,
+.footer__address:focus {
+  color: #ffa405;
+}
+
+.footer__address:active {
+  color: #b86500;
 }
 
 .footer__social {
@@ -385,11 +422,43 @@ input[type="radio"].visually-hidden {
   padding-top: 25px;
 }
 
+.button-reg:hover,
+.button-reg:focus {
+  color: #e6ddd3;
+  background-color: #b86500;
+}
+
+.button-reg:active {
+  color: #483930;
+  background-color: #c3a885;
+}
+
 .footer__contacts {
   display: flex;
   flex-wrap: wrap;
   width: 390px;
   margin-right: 120px;
+  position: relative;
+}
+
+.footer__contacts::before {
+  position: absolute;
+  content: "";
+  width: 369px;
+  height: 3px;
+  background-color: #e6ddd3;
+  top: 0;
+  left: 0;
+}
+
+.footer__contacts::after {
+  position: absolute;
+  content: "";
+  width: 369px;
+  height: 3px;
+  background-color: #e6ddd3;
+  bottom: 35px;
+  left: 0;
 }
 
 .footer__phone {
@@ -487,19 +556,18 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-register {
-  top: 20px;
+  bottom: 130px;
   line-height: 0;
   width: 560px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 30px;
   left: 60%;
-  overflow: auto;
 }
 
 .popup__form {
   padding-top: 25px;
-  padding-bottom: 75px;
+  padding-bottom: 25px;
   width: 100%;
 }
 
@@ -566,7 +634,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
   resize: none;
   width: 538px;
-  height: 155px;
+  height: 150px;
   margin-top: 15px;
   margin-bottom: 30px;
   padding-top: 20px;
@@ -612,6 +680,12 @@ input[type="radio"].visually-hidden {
 .button-popup:hover,
 .button-popup:focus {
   background-image: none;
+  color: #e6ddd3;
+  background-color: #b86500;
+}
+
+.button-popup:active {
+  color: #483930;
   background-color: #c3a885;
 }
 
