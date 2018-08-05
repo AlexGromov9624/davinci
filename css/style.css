@@ -13,6 +13,7 @@ body {
   font-size: 17px;
   line-height: 20px;
   background-image: url("../img/background.png");
+  background-repeat: no-repeat;
 }
 
 ul {
@@ -44,9 +45,17 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.main-page {
+
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
+}
+
+.index__background {
+
 }
 /*  FONTS, BACKGROUNDS */
 .header-nav__list a {
@@ -66,12 +75,16 @@ input[type="radio"].visually-hidden {
   color: #b86500;
 }
 
-.contacts__address {
+.header-nav__item--active a:hover {
+  color: inherit;
+}
+
+.header-contacts__address {
   font-size: 15px;
   font-weight: 600;
 }
 
-.contacts__phone {
+.header-contacts__phone {
   font-size: 31px;
   color: #483930;
   font-weight: 700;
@@ -183,7 +196,7 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
 }
 
-.contacts {
+.header-contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -205,13 +218,204 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 132px;
+  padding-left: 35px;
   padding-right: 34px;
-  position: relative;
+  margin-top: 0;
 }
 
 .services__item {
-  margin-top: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 345px;
+}
+
+.services__icon {
+  margin-right: 30px;
+  width: 68px;
+}
+
+.services__icon--therapy {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/therapy-icon.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--therapy-hover {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/therapy-icon-hover.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--therapy-active {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/therapy-icon-active.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--therapy:hover,
+.services__icon--therapy:focus {
+  background-image: none;
+}
+
+.services__icon--therapy-hover:active {
+  background-image: none;
+}
+
+.services__icon--hygiene {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/hygiene-icon.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--hygiene-hover {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/hygiene-icon-hover.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--hygiene-active {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/hygiene-icon-active.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--hygiene:hover,
+.services__icon--hygiene:focus {
+  background-image: none;
+}
+
+.services__icon--hygiene-hover:active {
+  background-image: none;
+}
+
+.services__icon--surgery {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/surgery-icon.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--surgery-hover {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/surgery-icon-hover.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--surgery-active {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/surgery-icon-active.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--surgery:hover,
+.services__icon--surgery:focus {
+  background-image: none;
+}
+
+.services__icon--surgery-hover:active {
+  background-image: none;
+}
+
+.services__icon--prosthetics {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/prosthetics-icon.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--prosthetics-hover {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/prosthetics-icon-hover.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--prosthetics-active {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/prosthetics-icon-active.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--prosthetics:hover,
+.services__icon--prosthetics:focus {
+  background-image: none;
+}
+
+.services__icon--prosthetics-hover:active {
+  background-image: none;
+}
+
+.services__icon--orthodontics {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/orthodontics-icon.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--orthodontics-hover {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/orthodontics-icon-hover.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--orthodontics-active {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/orthodontics-icon-active.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--orthodontics:hover,
+.services__icon--orthodontics:focus {
+  background-image: none;
+}
+
+.services__icon--orthodontics-hover:active {
+  background-image: none;
+}
+
+.services__icon--paradontologie {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/paradontologie-icon.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--paradontologie-hover {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/paradontologie-icon-hover.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--paradontologie-active {
+  width: 68px;
+  height: 68px;
+  background-image: url("../img/services-icons/paradontologie-icon-active.png");
+  background-repeat: no-repeat;
+}
+
+.services__icon--paradontologie:hover,
+.services__icon--paradontologie:focus {
+  background-image: none;
+}
+
+.services__icon--paradontologie-hover:active {
+  background-image: none;
+}
+
+.services__wrapper {
+  margin-top: 17px;
 }
 
 .services__item a:hover,
@@ -243,11 +447,11 @@ input[type="radio"].visually-hidden {
 
 .services__subitem a:hover,
 .services__subitem a:focus {
-  color: #d4ab69;
+  color: #d39937;
 }
 
 .services__subitem a:active {
-  color: #b08655;
+  color: #a96412;
 }
 
 .services__item--therapy,
@@ -256,66 +460,11 @@ input[type="radio"].visually-hidden {
   margin-right: 10px;
 }
 
-.services__item--therapy::before {
-  content: "";
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  background-image: url("../img/svg/therapy-icon.svg");
-  left: 35px;
-  top: 0;
-}
-
 .services__item--hygiene,
 .services__item--surgery,
 .services__item--orthodontics,
 .services__item--paradontologie {
   width: 270px;
-}
-
-.services__item--hygiene::before {
-  content: "";
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  background-image: url("../img/svg/hygiene-icon.svg");
-  left: 402px;
-  top: 0;
-}
-
-.services__item--surgery::before {
-  content: "";
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  background-image: url("../img/svg/surgery-icon.svg");
-  right: 333px;
-  top: 0;
-}
-
-.services__item--prosthetics::before,
-.services__item--orthodontics::before,
-.services__item--paradontologie::before {
-  content: "";
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  bottom: 138px;
-}
-
-.services__item--prosthetics::before {
-  background-image: url("../img/svg/prosthetics-icon.svg");
-  left: 35px;
-}
-
-.services__item--orthodontics::before {
-  background-image: url("../img/svg/orthodontics-icon.svg");
-  left: 402px;
-}
-
-.services__item--paradontologie::before {
-  background-image: url("../img/svg/paradontologie-icon.svg");
-  right: 333px;
 }
 
 .description {
@@ -336,16 +485,46 @@ input[type="radio"].visually-hidden {
 
 .footer__logo {
   width: 358px;
+  height: 25px;
   margin-top: 40px;
-  margin-bottom: 25px;
   margin-left: 35px;
   margin-right: 20px;
   padding-left: 10px;
 }
 
 .footer__marker {
-  margin-top: 20px;
-  margin-right: 15px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.footer__marker--active {
+  width: 30px;
+  height: 45px;
+  background-image: url("../img/svg/location-active.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__marker--hover {
+  width: 30px;
+  height: 45px;
+  background-image: url("../img/svg/location-hover.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__marker--regular {
+  width: 30px;
+  height: 45px;
+  background-image: url("../img/svg/location-regular.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__marker--regular:hover,
+.footer__marker--regular:focus {
+  background-image: none;
+}
+
+.footer__marker--hover:active {
+  background-image: none;
 }
 
 .popup-map--nojs {
@@ -374,22 +553,19 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 35px;
 }
 
-.social-button {
+.social__button {
   margin-right: 16px;
 }
 
-.social-button:hover {
+.social__button:hover {
   opacity: 0.7;
 }
 
-.social-button:active {
+.social__button:active {
   opacity: 0.3;
-}
-
-.footer__social {
-  padding-top: 20px;
 }
 
 .footer__social li:first-child {
@@ -725,4 +901,306 @@ input[type="radio"].visually-hidden {
 .popup-error {
   animation-name: shake;
   animation-duration: 0.7s;
+}
+
+/* SPECIALISTS */
+.doctors__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.doctors__item {
+  width: 380px;
+}
+
+.doctors__caption {
+  background-color: #f3ebe0;
+  opacity: 0.7;
+  margin-bottom: 15px;
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+
+.doctors__name {
+  margin-left: 22px;
+  font-size: 16px;
+  line-height: 13px;
+  color: inherit;
+  font-weight: bold;
+}
+
+.doctors__name:hover,
+.doctors__name:focus {
+  color: #ffa405;
+}
+
+.doctors__name:active {
+  color: #b86500;
+}
+
+.doctors__position {
+  margin-left: 22px;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 400;
+}
+
+.doctors__image-clr,
+.doctors__image-bw {
+  width: 380px;
+  height: 380px;
+  background-repeat: no-repeat;
+}
+
+.doctors__image-clr--galbatsov {
+  background-image: url("../img/doctors/clr/galbatsov_clr.png");
+}
+
+.doctors__image-bw--galbatsov {
+  background-image: url("../img/doctors/b_w/galbatsov b_w.png");
+}
+
+.doctors__image-clr--amirov {
+  background-image: url("../img/doctors/clr/amirov_clr.png");
+}
+
+.doctors__image-bw--amirov {
+  background-image: url("../img/doctors/b_w/amirov b_w.png");
+}
+
+.doctors__image-clr--kurmagomedov {
+  background-image: url("../img/doctors/clr/kurmagomedov_clr.png");
+}
+
+.doctors__image-bw--kurmagomedov {
+  background-image: url("../img/doctors/b_w/kurmagomedov b_w.png");
+}
+
+.doctors__image-clr--al-khamid {
+  background-image: url("../img/doctors/clr/al-khamid_clr.png");
+}
+
+.doctors__image-bw--al-khamid {
+  background-image: url("../img/doctors/b_w/al-khamid b_w.png");
+}
+
+.doctors__image-clr--malishava {
+  background-image: url("../img/doctors/clr/malishava_clr.png");
+}
+
+.doctors__image-bw--malishava {
+  background-image: url("../img/doctors/b_w/malishava b_w.png");
+}
+
+.doctors__image-clr--kizarisova {
+  background-image: url("../img/doctors/clr/kizarisova_clr.png");
+}
+
+.doctors__image-bw--kizarisova {
+  background-image: url("../img/doctors/b_w/kizarisova b_w.png");
+}
+
+.doctors__image-clr--davudov {
+  background-image: url("../img/doctors/clr/davudov_clr.png");
+}
+
+.doctors__image-bw--davudov {
+  background-image: url("../img/doctors/b_w/davudov b_w.png");
+}
+
+.doctors__image-bw--galbatsov:hover,
+.doctors__image-bw--galbatsov:focus,
+.doctors__image-bw--amirov:hover,
+.doctors__image-bw--amirov:focus,
+.doctors__image-bw--kurmagomedov:hover,
+.doctors__image-bw--kurmagomedov:focus,
+.doctors__image-bw--al-khamid:hover,
+.doctors__image-bw--al-khamid:focus,
+.doctors__image-bw--malishava:hover,
+.doctors__image-bw--malishava:focus,
+.doctors__image-bw--kizarisova:hover,
+.doctors__image-bw--kizarisova:focus,
+.doctors__image-bw--davudov:hover,
+.doctors__image-bw--davudov:focus {
+  background-image: none;
+}
+
+/* DOCTOR PAGE */
+.doctor-page {
+  background-color: #f4f0e9;
+  opacity: 0.7;
+}
+
+.doctor-page__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu {
+  width: 380px;
+  margin-right: 16px;
+}
+
+.menu__heading {
+  font-size: 24px;
+  margin-bottom: 45px;
+  margin-top: 30px;
+  margin-left: 18px;
+}
+
+.menu__item {
+  width: 357px;
+  padding-left: 23px;
+  padding-top: 4px;
+  padding-bottom: 19px;
+}
+
+.menu__item:hover,
+.menu__item:focus {
+  background-color: #e9dfd1;
+}
+
+.menu__item:active {
+  background-color: #fcdfaa;
+}
+
+.menu__item a {
+  color: #52443b;
+  font-size: 16px;
+}
+
+.info__block {
+  width: 746px;
+}
+
+.info__heading {
+  margin-bottom: 6px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.review {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.review__description {
+  width: 290px;
+}
+
+.info__text {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.review__text {
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: normal;
+}
+
+.review__image {
+  margin-right: 22px;
+}
+
+.review__description .review__text:last-child {
+  width: 253px;
+}
+
+.review__description .review__text:first-child {
+  margin-top: 0;
+}
+
+.certificats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+.certificats__image {
+  margin-right: 15px;
+}
+
+.certificats__image-one,
+.certificats__image-two {
+  margin-bottom: 35px;
+}
+
+.certificats__image-three,
+.certificats__image-four {
+  margin-bottom: 44px;
+  margin-right: 29px;
+}
+
+.certificats__image-one--galbatsov-clr {
+  width: 365px;
+  height: 274px;
+  background-image: url("../img/сertificats/clr/galbatsov/1.png");
+  background-repeat: no-repeat;
+}
+
+.certificats__image-one--galbatsov-bw {
+  width: 365px;
+  height: 274px;
+  background-image: url("../img/сertificats/bw/galbatsov/1.png");
+  background-repeat: no-repeat;
+}
+
+.certificats__image-one--galbatsov-bw:hover {
+  background-image: none;
+}
+
+.certificats__image-two--galbatsov-clr {
+  width: 364px;
+  height: 275px;
+  background-image: url("../img/сertificats/clr/galbatsov/2.png");
+  background-repeat: no-repeat;
+}
+
+.certificats__image-two--galbatsov-bw {
+  width: 364px;
+  height: 275px;
+  background-image: url("../img/сertificats/bw/galbatsov/2.png");
+  background-repeat: no-repeat;
+}
+
+.certificats__image-two--galbatsov-bw:hover {
+  background-image: none;
+}
+
+.certificats__image-three--galbatsov-clr {
+  width: 223px;
+  height: 294px;
+  background-image: url("../img/сertificats/clr/galbatsov/3.png");
+  background-repeat: no-repeat;
+}
+
+.certificats__image-three--galbatsov-bw {
+  width: 223px;
+  height: 294px;
+  background-image: url("../img/сertificats/bw/galbatsov/3.png");
+  background-repeat: no-repeat;
+}
+
+.certificats__image-three--galbatsov-bw:hover {
+  background-image: none;
+}
+
+.certificats__image-four--galbatsov-clr {
+  width: 209px;
+  height: 293px;
+  background-image: url("../img/сertificats/clr/galbatsov/4.png");
+  background-repeat: no-repeat;
+}
+
+.certificats__image-four--galbatsov-bw {
+  width: 209px;
+  height: 293px;
+  background-image: url("../img/сertificats/bw/galbatsov/4.png");
+  background-repeat: no-repeat;
+}
+
+.certificats__image-four--galbatsov-bw:hover {
+  background-image: none;
 }
