@@ -45,18 +45,11 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.main-page {
-
-}
-
 .container {
   width: 1170px;
   margin: 0 auto;
 }
 
-.index__background {
-
-}
 /*  FONTS, BACKGROUNDS */
 .header-nav__list a {
   color: #483930;
@@ -1096,7 +1089,7 @@ input[type="radio"].visually-hidden {
 
 .review__text {
   font-size: 12px;
-  line-height: 13px;
+  line-height: 14px;
   font-weight: normal;
 }
 
