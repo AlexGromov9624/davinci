@@ -9,270 +9,314 @@
   <title>Стоматология Da Vinci - главная</title>
 </head>
 <body>
-  <header class="header container">
-    <h2 class="visually-hidden">Шапка страницы</h2>
-    <nav class="header-nav">
-      <div class="header__wrapper">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="#">Услуги</a>
+  <div class="wrapper container">
+    <header class="header header--closed header--nojs">
+      <h2 class="visually-hidden">Шапка страницы</h2>
+      <a><img class="header__logo header__logo--mobile" src="img/davinci-logo-mobile.png" alt="Стоматология Da Vinci"></a>
+      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="header__wrapper header__wrapper--desktop">
+        <ul class="header__menu header__menu--desktop">
+          <li class="header__item">
+            <img class="header__logo" src="img/header-logo-mobile-open.png" alt="Логотип Da Vinci">
           </li>
-          <li class="header-nav__item">
-            <a href="#">Портфолио</a>
+          <li class="header__item header__item--phone">
+            <a class="header-contacts__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
           </li>
-          <li class="header-nav__item">
-            <a href="doctors.html">Специалисты</a>
+          <li class="header__item header__item--address">
+            <b class="header-contacts__address">Москва, проспект Маршала Жукова, 51</b>
           </li>
-        </ul>
-        <a class="header__logo"><img src="img/davinci-logo.png" alt="Стоматология Da Vinci"></a>
-        <ul class="header-nav__list">
-          <li class="header-nav__item header-nav__item-price">
-            <a href="#">Цены</a>
-          </li>
-          <li class="header-nav__item header-nav__item-registration">
-            <a href="#">Запись на прием</a>
-          </li>
-          <li class="header-nav__item header-nav__item-contacts">
-            <a href="#">Контакты</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="button-search" href="#">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              	 width="26.079px" height="24.095px" viewBox="0 0 26.079 24.095" enable-background="new 0 0 26.079 24.095" xml:space="preserve">
-                 <path fill="#482C3A" d="M25.082,19.42l-5.963-5.052c0.581-1.285,0.913-2.71,0.913-4.214C20.032,4.555,15.541,0,10.021,0
-              	C4.496,0,0,4.555,0,10.154c0,5.601,4.496,10.158,10.021,10.158c2.188,0,4.206-0.723,5.856-1.936l5.928,5.021
-              	C22.283,23.803,22.864,24,23.442,24c0.731,0,1.457-0.316,1.964-0.93C26.311,21.973,26.166,20.338,25.082,19.42z M16.476,12.737
-              	c-0.533,1.368-1.474,2.526-2.673,3.319c-1.089,0.723-2.387,1.146-3.782,1.146c-3.833,0-6.953-3.162-6.953-7.048
-              	c0-3.884,3.12-7.043,6.953-7.043c3.829,0,6.944,3.16,6.944,7.043C16.965,11.067,16.788,11.936,16.476,12.737z"/>
-              </svg>
-            </a>
+          <li class="header__item">
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item header-nav__item-services">
+                  <a href="#">Услуги</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="#">Портфолио</a>
+                </li>
+                <li class="header-nav__item">
+                  <a href="doctors.html">Специалисты</a>
+                </li>
+              </ul>
+              <a class="header__logo header__logo--desktop"><img src="img/davinci-logo.png" alt="Стоматология Da Vinci"></a>
+              <ul class="header-nav__list">
+                <li class="header-nav__item header-nav__item-price">
+                  <a href="#">Цены</a>
+                </li>
+                <li class="header-nav__item header-nav__item-registration">
+                  <a href="#">Запись на прием</a>
+                </li>
+                <li class="header-nav__item header-nav__item-contacts">
+                  <a href="contacts.html">Контакты</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="button-search button-search--mobile" href="#">
+                    <img src="img/search-icon-mobile.png" alt="Поиск" width="32" height="30">
+                  </a>
+                  <a class="button-search button-search--desktop" href="#">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	       width="26.079px" height="24.095px" viewBox="0 0 26.079 24.095" enable-background="new 0 0 26.079 24.095" xml:space="preserve">
+                       <path fill="#482C3A" d="M25.082,19.42l-5.963-5.052c0.581-1.285,0.913-2.71,0.913-4.214C20.032,4.555,15.541,0,10.021,0
+              	       C4.496,0,0,4.555,0,10.154c0,5.601,4.496,10.158,10.021,10.158c2.188,0,4.206-0.723,5.856-1.936l5.928,5.021
+              	       C22.283,23.803,22.864,24,23.442,24c0.731,0,1.457-0.316,1.964-0.93C26.311,21.973,26.166,20.338,25.082,19.42z M16.476,12.737
+              	       c-0.533,1.368-1.474,2.526-2.673,3.319c-1.089,0.723-2.387,1.146-3.782,1.146c-3.833,0-6.953-3.162-6.953-7.048
+              	       c0-3.884,3.12-7.043,6.953-7.043c3.829,0,6.944,3.16,6.944,7.043C16.965,11.067,16.788,11.936,16.476,12.737z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </li>
         </ul>
       </div>
-    </nav>
-    <div class="header-contacts">
-      <b class="header-contacts__address">Москва, проспект Маршала Жукова, 51</b>
-      <a class="header-contacts__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
-    </div>
-  </header>
+    </header>
 
-  <main class="main-page container">
-    <h1 class="visually-hidden">Стоматологическая клиника "Da Vinci" - главная страница</h1>
-    <section class="promo">
-      <h2 class="visually-hidden">О клинике Da Vinci</h2>
-      <div class="promo__slide">
-        <h2 class="promo__slogan">Стоматология как наука!</h2>
-      </div>
-      <p class="promo__text">Стоматология DaVinci Clinic - это произведение искуства,<br> созданное работающими здесь талантливыми людьми
+    <main class="main-page container">
+      <h1 class="visually-hidden">Стоматологическая клиника "Da Vinci" - главная страница</h1>
+      <section class="promo">
+        <h2 class="visually-hidden">О клинике Da Vinci</h2>
+        <div class="promo__slide">
+          <h2 class="promo__slogan"><span class="promo__letter">С</span>томатология как наука<span class="promo__sign">!</span></h2>
+        </div>
+        <p class="promo__text promo__text--mobile">Стоматология DaVinci Clinic &mdash;<br> это произведение искуства,<br> созданное работающими здесь талантливыми людьми
+        с помощью<br>технологических возможностей современного мира.</p>
+        <p class="promo__text promo__text--desktop">Стоматология DaVinci Clinic &mdash; это произведение искуства,<br> созданное работающими здесь талантливыми людьми
       с помощью<br>технологических возможностей современного мира.</p>
-    </section>
-    <section class="services">
-      <ul class="services__list">
-        <li class="services__item">
-          <a href="#">
-            <div class="services__icon services__icon--therapy-active">
-              <div class="services__icon services__icon--therapy-hover">
-                <div class="services__icon services__icon--therapy">
+      </section>
+      <section class="services">
+        <ul class="services__list">
+          <li class="services__item">
+            <a href="#">
+              <div class="services__icon services__icon--therapy-active">
+                <div class="services__icon services__icon--therapy-hover">
+                  <div class="services__icon services__icon--therapy">
+                  </div>
                 </div>
               </div>
+            </a>
+            <div class="services__wrapper">
+              <a href="#">Терапия</a>
+              <ul class="services__sublist services__sublist--therapy">
+                <li class="services__subitem"><a href="#">Лечение кариеса</a></li>
+                <li class="services__subitem"><a href="#">Лечение каналов зуба</a></li>
+                <li class="services__subitem"><a href="#">Лечение под микроскопом</a></li>
+              </ul>
             </div>
-          </a>
-          <div class="services__wrapper">
-            <a href="#">Терапия</a>
-            <ul class="services__sublist services__sublist--therapy">
-              <li class="services__subitem"><a href="#">Лечение кариеса</a></li>
-              <li class="services__subitem"><a href="#">Лечение каналов зуба</a></li>
-              <li class="services__subitem"><a href="#">Лечение под микроскопом</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="services__item">
-          <a href="#">
-            <div class="services__icon services__icon--hygiene-active">
-              <div class="services__icon services__icon--hygiene-hover">
-                <div class="services__icon services__icon--hygiene">
+          </li>
+          <li class="services__item">
+            <a href="#">
+              <div class="services__icon services__icon--hygiene-active">
+                <div class="services__icon services__icon--hygiene-hover">
+                  <div class="services__icon services__icon--hygiene">
+                  </div>
                 </div>
               </div>
+            </a>
+            <div class="services__wrapper">
+              <a href="#">Гигиена и отбеливание</a>
+              <ul class="services__sublist services__sublist--hygiene">
+                <li class="services__subitem"><a href="#">AIR FLOW</a></li>
+                <li class="services__subitem"><a href="#">Снятие отложений с зубов</a></li>
+                <li class="services__subitem"><a href="#">Фторирование</a></li>
+                <li class="services__subitem"><a href="#">Отбеливание</a></li>
+              </ul>
             </div>
-          </a>
-          <div class="services__wrapper">
-            <a href="#">Гигиена и<br>отбеливание</a>
-            <ul class="services__sublist services__sublist--hygiene">
-              <li class="services__subitem"><a href="#">AIR FLOW</a></li>
-              <li class="services__subitem"><a href="#">Снятие отложений с зубов</a></li>
-              <li class="services__subitem"><a href="#">Фторирование</a></li>
-              <li class="services__subitem"><a href="#">Отбеливание</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="services__item">
-          <a href="#">
-            <div class="services__icon services__icon--surgery-active">
-              <div class="services__icon services__icon--surgery-hover">
-                <div class="services__icon services__icon--surgery">
+          </li>
+          <li class="services__item">
+            <a href="#">
+              <div class="services__icon services__icon--surgery-active">
+                <div class="services__icon services__icon--surgery-hover">
+                  <div class="services__icon services__icon--surgery">
+                  </div>
                 </div>
               </div>
+            </a>
+            <div class="services__wrapper">
+              <a href="#">Хирургия и имплантация</a>
+              <ul class="services__sublist services__sublist--surgery">
+                <li class="services__subitem"><a href="#">Подготовка к имплантации</a></li>
+                <li class="services__subitem"><a href="#">Синус-лифтинг</a></li>
+                <li class="services__subitem"><a href="#">Одномоментная имплантация</a></li>
+              </ul>
             </div>
-          </a>
-          <div class="services__wrapper">
-            <a href="#">Хирургия и<br>имплантация</a>
-            <ul class="services__sublist services__sublist--surgery">
-              <li class="services__subitem"><a href="#">Подготовка к имплантации</a></li>
-              <li class="services__subitem"><a href="#">Синус-лифтинг</a></li>
-              <li class="services__subitem"><a href="#">Одномоментная имплантация</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="services__item">
-          <a href="#">
-            <div class="services__icon services__icon--prosthetics-active">
-              <div class="services__icon services__icon--prosthetics-hover">
-                <div class="services__icon services__icon--prosthetics">
+          </li>
+          <li class="services__item">
+            <a href="#">
+              <div class="services__icon services__icon--prosthetics-active">
+                <div class="services__icon services__icon--prosthetics-hover">
+                  <div class="services__icon services__icon--prosthetics">
+                  </div>
                 </div>
               </div>
+            </a>
+            <div class="services__wrapper">
+              <a href="#">Протезирование</a>
+              <ul class="services__sublist services__sublist--prosthetics">
+                <li class="services__subitem"><a href="#">Протезирование на имплантах</a></li>
+                <li class="services__subitem"><a href="#">Несъемное протезирование</a></li>
+              </ul>
             </div>
-          </a>
-          <div class="services__wrapper">
-            <a href="#">Протезирование</a>
-            <ul class="services__sublist services__sublist--prosthetics">
-              <li class="services__subitem"><a href="#">Протезирование на имплантах</a></li>
-              <li class="services__subitem"><a href="#">Несъемное протезирование</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="services__item">
-          <a href="#">
-            <div class="services__icon services__icon--orthodontics-active">
-              <div class="services__icon services__icon--orthodontics-hover">
-                <div class="services__icon services__icon--orthodontics">
+          </li>
+          <li class="services__item">
+            <a href="#">
+              <div class="services__icon services__icon--orthodontics-active">
+                <div class="services__icon services__icon--orthodontics-hover">
+                  <div class="services__icon services__icon--orthodontics">
+                  </div>
                 </div>
               </div>
+            </a>
+            <div class="services__wrapper">
+              <a href="#">Исправление<br> прикуса</a>
+              <ul class="services__sublist services__sublist--orthodontics">
+                <li class="services__subitem"><a href="#">Консультация ортодонта</a></li>
+                <li class="services__subitem"><a href="#">Брекет-системы</a></li>
+                <li class="services__subitem"><a href="#">Элайнеры</a></li>
+              </ul>
             </div>
-          </a>
-          <div class="services__wrapper">
-            <a href="#">Исправление<br> прикуса</a>
-            <ul class="services__sublist services__sublist--orthodontics">
-              <li class="services__subitem"><a href="#">Консультация ортодонта</a></li>
-              <li class="services__subitem"><a href="#">Брекет-системы</a></li>
-              <li class="services__subitem"><a href="#">Элайнеры</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="services__item">
-          <a href="#">
-            <div class="services__icon services__icon--paradontologie-active">
-              <div class="services__icon services__icon--paradontologie-hover">
-                <div class="services__icon services__icon--paradontologie">
+          </li>
+          <li class="services__item">
+            <a href="#">
+              <div class="services__icon services__icon--paradontologie-active">
+                <div class="services__icon services__icon--paradontologie-hover">
+                  <div class="services__icon services__icon--paradontologie">
+                  </div>
                 </div>
               </div>
+            </a>
+            <div class="services__wrapper">
+              <a href="#">Пародонтология</a>
+              <ul class="services__sublist services__sublist--paradontologie">
+                <li class="services__subitem"><a href="#">Лечение десен и пародонта</a></li>
+              </ul>
             </div>
-          </a>
-          <div class="services__wrapper">
-            <a href="#">Пародонтология</a>
-            <ul class="services__sublist services__sublist--paradontologie">
-              <li class="services__subitem"><a href="#">Лечение десен и пародонта</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="description">
-      <div class="description__block">
-        <img src="img/doctors.png" alt="Наши врачи за работой">
-        <p class="description__text">
-          Davinci Lab - собственная зуботехническая лаборатория и работа с лучшими мировыми техниками.
-          Поистине талантливых людей в зуботехническом деле крайне мало. Тех, кого могли - мы собрали у нас,
-          остальные предпочитают жить и работать в Лос-Анжелесе, Мюнхене и Милане.
-        </p>
-      </div>
-      <div class="description__block">
-        <img src="img/lab.png" alt="Зуботехническая лаборатория">
-        <p class="description__text">
-          Davinci Lab - собственная зуботехническая лаборатория и работа с лучшими мировыми техниками.
-          Поистине талантливых людей в зуботехническом деле крайне мало. Тех, кого могли - мы собрали у нас,
-          остальные предпочитают жить и работать в Лос-Анжелесе, Мюнхене и Милане.
-        </p>
-      </div>
-    </section>
-  </main>
+          </li>
+        </ul>
+      </section>
+      <section class="description">
+        <div class="description__block">
+          <img src="img/doctors.png" alt="Наши врачи за работой">
+          <p class="description__text">
+            Davinci Lab &mdash; собственная зуботехническая лаборатория и работа с лучшими мировыми техниками.
+            Поистине талантливых людей в зуботехническом деле крайне мало. Тех, кого могли - мы собрали у нас,
+            остальные предпочитают жить и работать в Лос-Анжелесе, Мюнхене и Милане.
+          </p>
+        </div>
+        <div class="description__block">
+          <img src="img/lab.png" alt="Зуботехническая лаборатория">
+          <p class="description__text">
+            Davinci Lab &mdash; собственная зуботехническая лаборатория и работа с лучшими мировыми техниками.
+            Поистине талантливых людей в зуботехническом деле крайне мало. Тех, кого могли - мы собрали у нас,
+            остальные предпочитают жить и работать в Лос-Анжелесе, Мюнхене и Милане.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <footer class="footer">
-    <div class="footer__wrapper-one container">
-      <div class="footer__logo">
-        <img src="img/logo_footer.png" alt="DaVinci Clinic">
-      </div>
-      <a href="#" class="footer__marker">
-        <div class="footer__marker footer__marker--active">
-          <div class="footer__marker footer__marker--hover">
-            <div class="footer__marker footer__marker--regular">
-            </div>
+      <div class="footer__wrapper container">
+        <div class="footer__logo footer__logo--mobile">
+          <img src="img/logo_footer-mobile.png" alt="DaVinci Clinic">
+        </div>
+        <div class="footer__logo footer__logo--desktop">
+          <img src="img/logo_footer.png" alt="DaVinci Clinic">
+        </div>
+        <div class="footer__contacts">
+          <a class="footer__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
+          <p class="footer__hours footer__hours--mobile">ежедневно c 9:00 до 21:00</p>
+          <p class="footer__hours footer__hours--desktop">ежедневно<br>c 9:00 до 21:00</p>
+        </div>
+        <div class="footer__form">
+          <div class="button-reg">
+            <a href="reg-form.html">Записаться<br> на прием</a>
           </div>
         </div>
-      </a>
-      <a href="#" class="footer__address">Москва, проспект Маршала Жукова, 51</a>
-      <ul class="footer__social">
-        <li><a class="social__button" href="#"><img src="img/svg/vk.svg" alt="Vkontakte"></a></li>
-        <li><a class="social__button" href="#"><img src="img/svg/fb.svg" alt="Facebook"></a></li>
-        <li><a class="social__button" href="#"><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
-        <li><a class="social__button" href="#"><img src="img/svg/youtube.svg" alt="Youtube"></a></li>
-      </ul>
-    </div>
-    <div class="footer__wrapper-two container">
-      <a class="button-reg" href="reg-form.html">Записаться<br> на прием</a>
-      <div class="footer__contacts">
-        <a class="footer__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
-        <p class="footer__hours">ежедневно<br>c 9:00 до 21:00</p>
+        <div class="footer__map">
+          <a href="#" class="footer__marker">
+            <div class="footer__marker footer__marker--active">
+              <div class="footer__marker footer__marker--hover">
+                <div class="footer__marker footer__marker--regular">
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="footer__address">Москва, проспект Маршала Жукова, 51</a>
+        </div>
+        <ul class="footer__social">
+          <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/vk-mobile.svg" alt="Vkontakte" width="48px" height="48px"></a></li>
+          <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/fb-mobile.svg" alt="Facebook" width="48px" height="48px"></a></li>
+          <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/instagram-mobile.svg" alt="Instagram" width="48px" height="48px"></a></li>
+          <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/youtube-mobile.svg" alt="Youtube" width="48px" height="48px"></a></li>
+          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/vk.svg" alt="Vkontakte"></a></li>
+          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/fb.svg" alt="Facebook"></a></li>
+          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
+          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/youtube.svg" alt="Youtube"></a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">&copy; ООО "Фаворит" 2018</li>
+          <li class="footer__item">
+            <a href="#">Реквизиты организации</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Лицензия</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+          <li class="footer__item">
+            <a href="#">Карта сайта</a>
+          </li>
+        </ul>
       </div>
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item">&copy; ООО "Фаворит" 2018</li>
-        <li class="footer-nav__item">
-          <a href="#">Реквизиты организации</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#">Лицензия</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#">Политика конфиденциальности</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#">Карта сайта</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+    </footer>
 
   <section class="popup popup-map popup-map--nojs">
-    <h2 class="visually-hidden">Как нас найти</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.6374027452546!2d37.461464665302145!3d55.77653342623514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b548e1e858d9c3%3A0x4c99ab4b9a456727!2z0L_RgNC-0YHQvy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCA1MSwg0JzQvtGB0LrQstCwLCAxMjMxNTQ!5e0!3m2!1sru!2sru!4v1531237130568" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <button class="popup-close" type="button" aria-label="Закрыть">x</button>
-  </section>
-
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <iframe class="popup__img popup__img--mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.9586842218932!2d37.460113088470415!3d55.776589408046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b548e1e858d9c3%3A0x4c99ab4b9a456727!2z0L_RgNC-0YHQvy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCA1MSwg0JzQvtGB0LrQstCwLCAxMjMxNTQ!5e0!3m2!1sru!2sru!4v1536747024798" width="510" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe class="popup__img popup__img--desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.6374027452546!2d37.461464665302145!3d55.77653342623514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b548e1e858d9c3%3A0x4c99ab4b9a456727!2z0L_RgNC-0YHQvy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCA1MSwg0JzQvtGB0LrQstCwLCAxMjMxNTQ!5e0!3m2!1sru!2sru!4v1531237130568" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <button class="popup-close" type="button" aria-label="Закрыть">x</button>
+    </section>
   <section class="popup popup-register">
-    <h2 class="popup__heading">Записаться на прием</h2>
+      <h2 class="popup__heading">Записаться на прием</h2>
 
-    <form class="popup__form" action="davinci.ru" method="post">
-      <div class="popup__item">
-        <label class="popup__text" for="name">Ваше имя:</label>
-        <input class="popup__field" type="text" name="client-to-reg" placeholder="Имя Фамилия" id="name">
-      </div>
-      <div class="popup__item">
-        <label class="popup__text" for="phone">Ваш телефон:</label>
-        <input class="popup__field" type="tel" name="client-phone" placeholder="" id="phone">
-      </div>
-      <div class="popup__item">
-        <label class="popup__text" for="email">Ваша почта:</label>
-        <input class="popup__field" type="email" name="client-email" placeholder="" id="email">
-      </div>
-      <div class="popup__item">
-        <label class="popup__text" for="comments">Комментарии:</label>
-        <textarea class="popup__textarea" name="client-comments" placeholder="В свободной форме" id="comments"></textarea>
-      </div>
-      <button class="button-popup" type="submit" name="button">Записаться</button>
-    </form>
-    <button class="popup-close" type="button" aria-label="Закрыть">х</button>
-  </section>
+      <form class="popup__form" action="davinci.ru" method="post">
+        <div class="popup__item">
+          <label class="popup__text" for="name">Ваше имя:</label>
+          <input class="popup__field" type="text" name="client-to-reg" placeholder="Имя Фамилия" id="name">
+        </div>
+        <div class="popup__item">
+          <label class="popup__text" for="phone">Ваш телефон:</label>
+          <input class="popup__field" type="tel" name="client-phone" placeholder="" id="phone">
+        </div>
+        <div class="popup__item">
+          <label class="popup__text" for="email">Ваша почта:</label>
+          <input class="popup__field" type="email" name="client-email" placeholder="" id="email">
+        </div>
+        <div class="popup__item">
+          <label class="popup__text" for="comments">Комментарии:</label>
+          <textarea class="popup__textarea" name="client-comments" placeholder="В свободной форме" id="comments"></textarea>
+        </div>
+        <button class="button-popup" type="submit" name="button">Записаться</button>
+      </form>
+      <button class="popup-close" type="button" aria-label="Закрыть">х</button>
+    </section>
 
+  <script type="text/javascript">
+    var pageHeader = document.querySelector('.header');
+    var toggleHeader = document.querySelector('.header__toggle');
+
+    pageHeader.classList.remove('header--nojs');
+    toggleHeader.addEventListener('click', function () {
+      if (pageHeader.classList.contains('header--closed')) {
+        pageHeader.classList.remove('header--closed');
+        pageHeader.classList.add('header--opened');
+      } else {
+        pageHeader.classList.add('header--closed');
+        pageHeader.classList.remove('header--opened');
+      }
+    });
+  </script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
