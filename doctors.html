@@ -12,7 +12,7 @@
   <div class="wrapper container">
     <header class="header header--closed header--nojs">
       <h2 class="visually-hidden">Шапка страницы</h2>
-      <a><img class="header__logo header__logo--mobile" src="img/davinci-logo-mobile.png" alt="Стоматология Da Vinci"></a>
+      <a href="index.html"><img class="header__logo header__logo--mobile" src="img/davinci-logo-mobile.png" alt="Стоматология Da Vinci"></a>
       <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="header__wrapper header__wrapper--desktop">
         <ul class="header__menu header__menu--desktop">
@@ -20,7 +20,7 @@
             <img class="header__logo" src="img/header-logo-mobile-open.png" alt="Логотип Da Vinci">
           </li>
           <li class="header__item header__item--phone">
-            <a class="header-contacts__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
+            <a class="header-contacts__phone" href="tel:+74951503350" tabindex="8">+7 (495) 150-33-50</a>
           </li>
           <li class="header__item header__item--address">
             <b class="header-contacts__address">Москва, проспект Маршала Жукова, 51</b>
@@ -29,31 +29,31 @@
             <nav class="header-nav">
               <ul class="header-nav__list">
                 <li class="header-nav__item header-nav__item-services">
-                  <a href="#">Услуги</a>
+                  <a href="#" tabindex="1">Услуги</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="#">Портфолио</a>
+                  <a href="#" tabindex="2">Портфолио</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="doctors.html">Специалисты</a>
+                  <a>Специалисты</a>
                 </li>
               </ul>
-              <a href="index.html" class="header__logo header__logo--desktop"><img src="img/davinci-logo.png" alt="Стоматология Da Vinci"></a>
+              <a class="header__logo header__logo--desktop" href="index.html"><img src="img/davinci-logo.png" alt="Стоматология Da Vinci" tabindex="3"></a>
               <ul class="header-nav__list">
                 <li class="header-nav__item header-nav__item-price">
-                  <a href="#">Цены</a>
+                  <a href="#" tabindex="4">Цены</a>
                 </li>
                 <li class="header-nav__item header-nav__item-registration">
-                  <a href="#">Запись на прием</a>
+                  <a href="#" tabindex="5">Запись на прием</a>
                 </li>
                 <li class="header-nav__item header-nav__item-contacts">
-                  <a href="contacts.html">Контакты</a>
+                  <a href="contacts.html" tabindex="6">Контакты</a>
                 </li>
                 <li class="header-nav__item">
                   <a class="button-search button-search--mobile" href="#">
                     <img src="img/search-icon-mobile.png" alt="Поиск" width="32" height="30">
                   </a>
-                  <a class="button-search button-search--desktop" href="#">
+                  <a class="button-search button-search--desktop" href="#" tabindex="7">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	       width="26.079px" height="24.095px" viewBox="0 0 26.079 24.095" enable-background="new 0 0 26.079 24.095" xml:space="preserve">
                        <path fill="#482C3A" d="M25.082,19.42l-5.963-5.052c0.581-1.285,0.913-2.71,0.913-4.214C20.032,4.555,15.541,0,10.021,0
@@ -63,6 +63,12 @@
               	       c0-3.884,3.12-7.043,6.953-7.043c3.829,0,6.944,3.16,6.944,7.043C16.965,11.067,16.788,11.936,16.476,12.737z"/>
                     </svg>
                   </a>
+                </li>
+                <li class="header-nav__item header-nav__item-search header-nav__item--closed">
+                  <form class="form" action="index.html" method="post">
+                    <input class="form__field" type="text" name="search" placeholder="поиск по сайту">
+                    <button class="button-form" type="button" name="button">Найти</button>
+                  </form>
                 </li>
               </ul>
             </nav>
@@ -76,79 +82,79 @@
       <section class="doctors">
         <ul class="doctors__list">
           <li class="doctors__item">
-            <a href="galbatsov.html">
+            <a href="galbatsov.html" tabindex="8">
               <div class="doctors__image-clr doctors__image-clr--galbatsov">
                 <div class="doctors__image-bw doctors__image-bw--galbatsov"></div>
               </div>
             </a>
             <div class="doctors__caption">
-              <a href="galbatsov.html" class="doctors__name">Галбацов Джалал Микаилович</a><br>
+              <a href="galbatsov.html" class="doctors__name" tabindex="9">Галбацов Джалал Микаилович</a><br>
               <b class="doctors__position">Директор клиники, врач стоматолог-ортопед</b>
             </div>
           </li>
           <li class="doctors__item">
-            <a href="amirov.html">
+            <a href="amirov.html" tabindex="10">
               <div class="doctors__image-clr doctors__image-clr--amirov">
                 <div class="doctors__image-bw doctors__image-bw--amirov"></div>
               </div>
             </a>
             <div class="doctors__caption">
-              <a href="amirov.html" class="doctors__name">Амиров Арслан Русланович</a><br>
+              <a href="amirov.html" class="doctors__name" tabindex="11">Амиров Арслан Русланович</a><br>
               <b class="doctors__position">Врач стоматолог-хирург</b>
             </div>
           </li>
           <li class="doctors__item">
-            <a href="kurmagomedov.html">
+            <a href="kurmagomedov.html" tabindex="12">
               <div class="doctors__image-clr doctors__image-clr--kurmagomedov">
                 <div class="doctors__image-bw doctors__image-bw--kurmagomedov"></div>
               </div>
             </a>
             <div class="doctors__caption">
-              <a href="kurmagomedov.html" class="doctors__name">Курмагомедов Осман Шамильевич</a><br>
+              <a href="kurmagomedov.html" class="doctors__name" tabindex="13">Курмагомедов Осман Шамильевич</a><br>
               <b class="doctors__position">Врач стоматолог-хирург</b>
             </div>
           </li>
           <li class="doctors__item">
-            <a href="al-khamid.html">
+            <a href="al-khamid.html" tabindex="14">
               <div class="doctors__image-clr doctors__image-clr--al-khamid">
                 <div class="doctors__image-bw doctors__image-bw--al-khamid"></div>
               </div>
             </a>
             <div class="doctors__caption">
-              <a href="al-khamid.html" class="doctors__name">Аль-Хамид Катрин Джамалевна</a><br>
+              <a href="al-khamid.html" class="doctors__name" tabindex="15">Аль-Хамид Катрин Джамалевна</a><br>
               <b class="doctors__position">Врач-ортодонт</b>
             </div>
           </li>
           <li class="doctors__item">
-            <a href="malishava.html">
+            <a href="malishava.html" tabindex="16">
               <div class="doctors__image-clr doctors__image-clr--malishava">
                 <div class="doctors__image-bw doctors__image-bw--malishava"></div>
               </div>
             </a>
             <div class="doctors__caption">
-              <a href="malishava.html" class="doctors__name">Малишава Тамуна Валерьяновна</a><br>
+              <a href="malishava.html" class="doctors__name" tabindex="17">Малишава Тамуна Валерьяновна</a><br>
               <b class="doctors__position">Врач стоматолог-терапевт</b>
             </div>
           </li>
           <li class="doctors__item">
-            <a href="kizarisova.html">
+            <a href="kizarisova.html" tabindex="18">
               <div class="doctors__image-clr doctors__image-clr--kizarisova">
                 <div class="doctors__image-bw doctors__image-bw--kizarisova"></div>
               </div>
             </a>
             <div class="doctors__caption">
-              <a href="kizarisova.html" class="doctors__name">Кизарисова Маргарита Александровна</a><br>
+              <a href="kizarisova.html" class="doctors__name" tabindex="19">Кизарисова Маргарита Александровна</a><br>
               <b class="doctors__position">Врач стоматолог-пародонтолог</b>
             </div>
           </li>
           <li class="doctors__item">
-            <a href="davudov.html">
+            <a href="davudov.html" tabindex="20">
               <div class="doctors__image-clr doctors__image-clr--davudov">
                 <div class="doctors__image-bw doctors__image-bw--davudov"></div>
               </div>
             </a>
             <div class="doctors__caption">
-              <a href="davudov.html" class="doctors__name">Давудов Магомед Алиевич</a><br>
+              <a href="davudov.html" class="doctors__name" tabindex="21">Давудов Магомед Алиевич</a><br>
               <b class="doctors__position">Врач стоматолог-ортопед</b>
             </div>
           </li>
@@ -160,23 +166,23 @@
   <footer class="footer">
       <div class="footer__wrapper container">
         <div class="footer__logo footer__logo--mobile">
-          <img src="img/logo_footer-mobile.png" alt="DaVinci Clinic">
+          <a href="index.html"><img src="img/logo_footer-mobile.png" alt="DaVinci Clinic"></a>
         </div>
         <div class="footer__logo footer__logo--desktop">
-          <img src="img/logo_footer.png" alt="DaVinci Clinic">
+          <a href="index.html" tabindex="22"><img src="img/logo_footer.png" alt="DaVinci Clinic"></a>
         </div>
         <div class="footer__contacts">
-          <a class="footer__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
+          <a class="footer__phone" href="tel:+74951503350" tabindex="30">+7 (495) 150-33-50</a>
           <p class="footer__hours footer__hours--mobile">ежедневно c 9:00 до 21:00</p>
           <p class="footer__hours footer__hours--desktop">ежедневно<br>c 9:00 до 21:00</p>
         </div>
         <div class="footer__form">
           <div class="button-reg">
-            <a href="reg-form.html">Записаться<br> на прием</a>
+            <a href="reg-form.html" tabindex="29">Записаться<br> на прием</a>
           </div>
         </div>
         <div class="footer__map">
-          <a href="#" class="footer__marker">
+          <a href="#" class="footer__marker" tabindex="23">
             <div class="footer__marker footer__marker--active">
               <div class="footer__marker footer__marker--hover">
                 <div class="footer__marker footer__marker--regular">
@@ -184,31 +190,31 @@
               </div>
             </div>
           </a>
-          <a href="#" class="footer__address">Москва, проспект Маршала Жукова, 51</a>
+          <a href="#" class="footer__address" tabindex="24">Москва, проспект Маршала Жукова, 51</a>
         </div>
         <ul class="footer__social">
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/vk-mobile.svg" alt="Vkontakte" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/fb-mobile.svg" alt="Facebook" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/instagram-mobile.svg" alt="Instagram" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/youtube-mobile.svg" alt="Youtube" width="48px" height="48px"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/vk.svg" alt="Vkontakte"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/fb.svg" alt="Facebook"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/youtube.svg" alt="Youtube"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="25"><img src="img/svg/vk.svg" alt="Vkontakte"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="26"><img src="img/svg/fb.svg" alt="Facebook"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="27"><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="28"><img src="img/svg/youtube.svg" alt="Youtube"></a></li>
         </ul>
         <ul class="footer__list">
           <li class="footer__item">&copy; ООО "Фаворит" 2018</li>
           <li class="footer__item">
-            <a href="#">Реквизиты организации</a>
+            <a href="#" tabindex="31">Реквизиты организации</a>
           </li>
           <li class="footer__item">
-            <a href="#">Лицензия</a>
+            <a href="#" tabindex="32">Лицензия</a>
           </li>
           <li class="footer__item">
-            <a href="#">Политика конфиденциальности</a>
+            <a href="#" tabindex="33">Политика конфиденциальности</a>
           </li>
           <li class="footer__item">
-            <a href="#">Карта сайта</a>
+            <a href="#" tabindex="34">Карта сайта</a>
           </li>
         </ul>
       </div>
@@ -246,20 +252,39 @@
     </section>
 
   <script type="text/javascript">
-    var pageHeader = document.querySelector('.header');
-    var toggleHeader = document.querySelector('.header__toggle');
+      var pageHeader = document.querySelector('.header');
+      var toggleHeader = document.querySelector('.header__toggle');
+      var headerSearch = document.querySelector('.header-nav__item-search');
+      var buttonSearch = document.querySelector('.button-search--desktop');
 
-    pageHeader.classList.remove('header--nojs');
-    toggleHeader.addEventListener('click', function () {
-      if (pageHeader.classList.contains('header--closed')) {
-        pageHeader.classList.remove('header--closed');
-        pageHeader.classList.add('header--opened');
-      } else {
-        pageHeader.classList.add('header--closed');
-        pageHeader.classList.remove('header--opened');
-      }
-    });
-  </script>
+      pageHeader.classList.remove('header--nojs');
+      toggleHeader.addEventListener('click', function () {
+        if (pageHeader.classList.contains('header--closed')) {
+          pageHeader.classList.remove('header--closed');
+          pageHeader.classList.add('header--opened');
+        } else {
+          pageHeader.classList.add('header--closed');
+          pageHeader.classList.remove('header--opened');
+        }
+      });
+
+      buttonSearch.addEventListener('click', function () {
+        if (headerSearch.classList.contains('header-nav__item--closed')) {
+          headerSearch.classList.remove('header-nav__item--closed');
+          headerSearch.classList.add('header-nav__item--opened');
+        }
+      });
+
+      window.addEventListener("keydown", function(evt) {
+          if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (headerSearch.classList.contains('header-nav__item--opened')) {
+              headerSearch.classList.remove('header-nav__item--opened');
+              headerSearch.classList.add('header-nav__item--closed');
+            }
+          }
+        });
+    </script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

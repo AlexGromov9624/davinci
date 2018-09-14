@@ -20,7 +20,7 @@
             <img class="header__logo" src="img/header-logo-mobile-open.png" alt="Логотип Da Vinci">
           </li>
           <li class="header__item header__item--phone">
-            <a class="header-contacts__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
+            <a class="header-contacts__phone" href="tel:+74951503350" tabindex="8">+7 (495) 150-33-50</a>
           </li>
           <li class="header__item header__item--address">
             <b class="header-contacts__address">Москва, проспект Маршала Жукова, 51</b>
@@ -29,31 +29,31 @@
             <nav class="header-nav">
               <ul class="header-nav__list">
                 <li class="header-nav__item header-nav__item-services">
-                  <a href="#">Услуги</a>
+                  <a href="#" tabindex="1">Услуги</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="#">Портфолио</a>
+                  <a href="#" tabindex="2">Портфолио</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="doctors.html">Специалисты</a>
+                  <a href="doctors.html" tabindex="3">Специалисты</a>
                 </li>
               </ul>
               <a class="header__logo header__logo--desktop"><img src="img/davinci-logo.png" alt="Стоматология Da Vinci"></a>
               <ul class="header-nav__list">
                 <li class="header-nav__item header-nav__item-price">
-                  <a href="#">Цены</a>
+                  <a href="#" tabindex="4">Цены</a>
                 </li>
                 <li class="header-nav__item header-nav__item-registration">
-                  <a href="#">Запись на прием</a>
+                  <a href="#" tabindex="5">Запись на прием</a>
                 </li>
                 <li class="header-nav__item header-nav__item-contacts">
-                  <a href="contacts.html">Контакты</a>
+                  <a href="contacts.html" tabindex="6">Контакты</a>
                 </li>
                 <li class="header-nav__item">
                   <a class="button-search button-search--mobile" href="#">
                     <img src="img/search-icon-mobile.png" alt="Поиск" width="32" height="30">
                   </a>
-                  <a class="button-search button-search--desktop" href="#">
+                  <a class="button-search button-search--desktop" href="#" tabindex="7">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	       width="26.079px" height="24.095px" viewBox="0 0 26.079 24.095" enable-background="new 0 0 26.079 24.095" xml:space="preserve">
                        <path fill="#482C3A" d="M25.082,19.42l-5.963-5.052c0.581-1.285,0.913-2.71,0.913-4.214C20.032,4.555,15.541,0,10.021,0
@@ -63,6 +63,12 @@
               	       c0-3.884,3.12-7.043,6.953-7.043c3.829,0,6.944,3.16,6.944,7.043C16.965,11.067,16.788,11.936,16.476,12.737z"/>
                     </svg>
                   </a>
+                </li>
+                <li class="header-nav__item header-nav__item-search header-nav__item--closed">
+                  <form class="form" action="index.html" method="post">
+                    <input class="form__field" type="text" name="search" placeholder="поиск по сайту">
+                    <button class="button-form" type="button" name="button">Найти</button>
+                  </form>
                 </li>
               </ul>
             </nav>
@@ -86,7 +92,7 @@
       <section class="services">
         <ul class="services__list">
           <li class="services__item">
-            <a href="#">
+            <a href="#" tabindex="9">
               <div class="services__icon services__icon--therapy-active">
                 <div class="services__icon services__icon--therapy-hover">
                   <div class="services__icon services__icon--therapy">
@@ -95,16 +101,16 @@
               </div>
             </a>
             <div class="services__wrapper">
-              <a href="#">Терапия</a>
+              <a href="#" tabindex="10">Терапия</a>
               <ul class="services__sublist services__sublist--therapy">
-                <li class="services__subitem"><a href="#">Лечение кариеса</a></li>
-                <li class="services__subitem"><a href="#">Лечение каналов зуба</a></li>
-                <li class="services__subitem"><a href="#">Лечение под микроскопом</a></li>
+                <li class="services__subitem"><a href="#" tabindex="11">Лечение кариеса</a></li>
+                <li class="services__subitem"><a href="#" tabindex="12">Лечение каналов зуба</a></li>
+                <li class="services__subitem"><a href="#" tabindex="13">Лечение под микроскопом</a></li>
               </ul>
             </div>
           </li>
           <li class="services__item">
-            <a href="#">
+            <a href="#" tabindex="14">
               <div class="services__icon services__icon--hygiene-active">
                 <div class="services__icon services__icon--hygiene-hover">
                   <div class="services__icon services__icon--hygiene">
@@ -113,17 +119,17 @@
               </div>
             </a>
             <div class="services__wrapper">
-              <a href="#">Гигиена и отбеливание</a>
+              <a href="#" tabindex="15">Гигиена и отбеливание</a>
               <ul class="services__sublist services__sublist--hygiene">
-                <li class="services__subitem"><a href="#">AIR FLOW</a></li>
-                <li class="services__subitem"><a href="#">Снятие отложений с зубов</a></li>
-                <li class="services__subitem"><a href="#">Фторирование</a></li>
-                <li class="services__subitem"><a href="#">Отбеливание</a></li>
+                <li class="services__subitem"><a href="#" tabindex="16">AIR FLOW</a></li>
+                <li class="services__subitem"><a href="#" tabindex="17">Снятие отложений с зубов</a></li>
+                <li class="services__subitem"><a href="#" tabindex="18">Фторирование</a></li>
+                <li class="services__subitem"><a href="#" tabindex="19">Отбеливание</a></li>
               </ul>
             </div>
           </li>
           <li class="services__item">
-            <a href="#">
+            <a href="#" tabindex="20">
               <div class="services__icon services__icon--surgery-active">
                 <div class="services__icon services__icon--surgery-hover">
                   <div class="services__icon services__icon--surgery">
@@ -132,16 +138,16 @@
               </div>
             </a>
             <div class="services__wrapper">
-              <a href="#">Хирургия и имплантация</a>
+              <a href="#" tabindex="21">Хирургия и имплантация</a>
               <ul class="services__sublist services__sublist--surgery">
-                <li class="services__subitem"><a href="#">Подготовка к имплантации</a></li>
-                <li class="services__subitem"><a href="#">Синус-лифтинг</a></li>
-                <li class="services__subitem"><a href="#">Одномоментная имплантация</a></li>
+                <li class="services__subitem"><a href="#" tabindex="22">Подготовка к имплантации</a></li>
+                <li class="services__subitem"><a href="#" tabindex="23">Синус-лифтинг</a></li>
+                <li class="services__subitem"><a href="#" tabindex="24">Одномоментная имплантация</a></li>
               </ul>
             </div>
           </li>
           <li class="services__item">
-            <a href="#">
+            <a href="#" tabindex="25">
               <div class="services__icon services__icon--prosthetics-active">
                 <div class="services__icon services__icon--prosthetics-hover">
                   <div class="services__icon services__icon--prosthetics">
@@ -150,15 +156,15 @@
               </div>
             </a>
             <div class="services__wrapper">
-              <a href="#">Протезирование</a>
+              <a href="#" tabindex="26">Протезирование</a>
               <ul class="services__sublist services__sublist--prosthetics">
-                <li class="services__subitem"><a href="#">Протезирование на имплантах</a></li>
-                <li class="services__subitem"><a href="#">Несъемное протезирование</a></li>
+                <li class="services__subitem"><a href="#" tabindex="27">Протезирование на имплантах</a></li>
+                <li class="services__subitem"><a href="#" tabindex="28">Несъемное протезирование</a></li>
               </ul>
             </div>
           </li>
           <li class="services__item">
-            <a href="#">
+            <a href="#" tabindex="29">
               <div class="services__icon services__icon--orthodontics-active">
                 <div class="services__icon services__icon--orthodontics-hover">
                   <div class="services__icon services__icon--orthodontics">
@@ -167,16 +173,16 @@
               </div>
             </a>
             <div class="services__wrapper">
-              <a href="#">Исправление<br> прикуса</a>
+              <a href="#" tabindex="30">Исправление<br> прикуса</a>
               <ul class="services__sublist services__sublist--orthodontics">
-                <li class="services__subitem"><a href="#">Консультация ортодонта</a></li>
-                <li class="services__subitem"><a href="#">Брекет-системы</a></li>
-                <li class="services__subitem"><a href="#">Элайнеры</a></li>
+                <li class="services__subitem"><a href="#" tabindex="31">Консультация ортодонта</a></li>
+                <li class="services__subitem"><a href="#" tabindex="32">Брекет-системы</a></li>
+                <li class="services__subitem"><a href="#" tabindex="33">Элайнеры</a></li>
               </ul>
             </div>
           </li>
           <li class="services__item">
-            <a href="#">
+            <a href="#" tabindex="34">
               <div class="services__icon services__icon--paradontologie-active">
                 <div class="services__icon services__icon--paradontologie-hover">
                   <div class="services__icon services__icon--paradontologie">
@@ -185,9 +191,9 @@
               </div>
             </a>
             <div class="services__wrapper">
-              <a href="#">Пародонтология</a>
+              <a href="#" tabindex="35">Пародонтология</a>
               <ul class="services__sublist services__sublist--paradontologie">
-                <li class="services__subitem"><a href="#">Лечение десен и пародонта</a></li>
+                <li class="services__subitem"><a href="#" tabindex="36">Лечение десен и пародонта</a></li>
               </ul>
             </div>
           </li>
@@ -223,17 +229,17 @@
           <img src="img/logo_footer.png" alt="DaVinci Clinic">
         </div>
         <div class="footer__contacts">
-          <a class="footer__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
+          <a class="footer__phone" href="tel:+74951503350" tabindex="44">+7 (495) 150-33-50</a>
           <p class="footer__hours footer__hours--mobile">ежедневно c 9:00 до 21:00</p>
           <p class="footer__hours footer__hours--desktop">ежедневно<br>c 9:00 до 21:00</p>
         </div>
         <div class="footer__form">
           <div class="button-reg">
-            <a href="reg-form.html">Записаться<br> на прием</a>
+            <a href="reg-form.html" tabindex="43">Записаться<br> на прием</a>
           </div>
         </div>
         <div class="footer__map">
-          <a href="#" class="footer__marker">
+          <a href="#" class="footer__marker" tabindex="37">
             <div class="footer__marker footer__marker--active">
               <div class="footer__marker footer__marker--hover">
                 <div class="footer__marker footer__marker--regular">
@@ -241,31 +247,31 @@
               </div>
             </div>
           </a>
-          <a href="#" class="footer__address">Москва, проспект Маршала Жукова, 51</a>
+          <a href="#" class="footer__address" tabindex="38">Москва, проспект Маршала Жукова, 51</a>
         </div>
         <ul class="footer__social">
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/vk-mobile.svg" alt="Vkontakte" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/fb-mobile.svg" alt="Facebook" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/instagram-mobile.svg" alt="Instagram" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/youtube-mobile.svg" alt="Youtube" width="48px" height="48px"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/vk.svg" alt="Vkontakte"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/fb.svg" alt="Facebook"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/youtube.svg" alt="Youtube"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="39"><img src="img/svg/vk.svg" alt="Vkontakte"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="40"><img src="img/svg/fb.svg" alt="Facebook"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="41"><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="42"><img src="img/svg/youtube.svg" alt="Youtube"></a></li>
         </ul>
         <ul class="footer__list">
           <li class="footer__item">&copy; ООО "Фаворит" 2018</li>
           <li class="footer__item">
-            <a href="#">Реквизиты организации</a>
+            <a href="#" tabindex="45">Реквизиты организации</a>
           </li>
           <li class="footer__item">
-            <a href="#">Лицензия</a>
+            <a href="#" tabindex="46">Лицензия</a>
           </li>
           <li class="footer__item">
-            <a href="#">Политика конфиденциальности</a>
+            <a href="#" tabindex="47">Политика конфиденциальности</a>
           </li>
           <li class="footer__item">
-            <a href="#">Карта сайта</a>
+            <a href="#" tabindex="48">Карта сайта</a>
           </li>
         </ul>
       </div>
@@ -305,6 +311,8 @@
   <script type="text/javascript">
     var pageHeader = document.querySelector('.header');
     var toggleHeader = document.querySelector('.header__toggle');
+    var headerSearch = document.querySelector('.header-nav__item-search');
+    var buttonSearch = document.querySelector('.button-search--desktop');
 
     pageHeader.classList.remove('header--nojs');
     toggleHeader.addEventListener('click', function () {
@@ -316,6 +324,23 @@
         pageHeader.classList.remove('header--opened');
       }
     });
+
+    buttonSearch.addEventListener('click', function () {
+      if (headerSearch.classList.contains('header-nav__item--closed')) {
+        headerSearch.classList.remove('header-nav__item--closed');
+        headerSearch.classList.add('header-nav__item--opened');
+      }
+    });
+
+    window.addEventListener("keydown", function(evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (headerSearch.classList.contains('header-nav__item--opened')) {
+            headerSearch.classList.remove('header-nav__item--opened');
+            headerSearch.classList.add('header-nav__item--closed');
+          }
+        }
+      });
   </script>
   <script src="js/scripts.js"></script>
 </body>

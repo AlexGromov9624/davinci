@@ -12,7 +12,7 @@
   <div class="wrapper container">
     <header class="header header--closed header--nojs">
       <h2 class="visually-hidden">Шапка страницы</h2>
-      <a><img class="header__logo header__logo--mobile" src="img/davinci-logo-mobile.png" alt="Стоматология Da Vinci"></a>
+      <a href="index.html"><img class="header__logo header__logo--mobile" src="img/davinci-logo-mobile.png" alt="Стоматология Da Vinci"></a>
       <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="header__wrapper header__wrapper--desktop">
         <ul class="header__menu header__menu--desktop">
@@ -20,7 +20,7 @@
             <img class="header__logo" src="img/header-logo-mobile-open.png" alt="Логотип Da Vinci">
           </li>
           <li class="header__item header__item--phone">
-            <a class="header-contacts__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
+            <a class="header-contacts__phone" href="tel:+74951503350" tabindex="8">+7 (495) 150-33-50</a>
           </li>
           <li class="header__item header__item--address">
             <b class="header-contacts__address">Москва, проспект Маршала Жукова, 51</b>
@@ -29,22 +29,22 @@
             <nav class="header-nav">
               <ul class="header-nav__list">
                 <li class="header-nav__item header-nav__item-services">
-                  <a href="#">Услуги</a>
+                  <a href="#" tabindex="1">Услуги</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="#">Портфолио</a>
+                  <a href="#" tabindex="2">Портфолио</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="doctors.html">Специалисты</a>
+                  <a href="doctors.html" tabindex="3">Специалисты</a>
                 </li>
               </ul>
-              <a href="index.html" class="header__logo header__logo--desktop"><img src="img/davinci-logo.png" alt="Стоматология Da Vinci"></a>
+              <a class="header__logo header__logo--desktop" href="index.html"><img src="img/davinci-logo.png" alt="Стоматология Da Vinci" tabindex="4"></a>
               <ul class="header-nav__list">
                 <li class="header-nav__item header-nav__item-price">
-                  <a href="#">Цены</a>
+                  <a href="#" tabindex="5">Цены</a>
                 </li>
                 <li class="header-nav__item header-nav__item-registration">
-                  <a href="#">Запись на прием</a>
+                  <a href="#" tabindex="6">Запись на прием</a>
                 </li>
                 <li class="header-nav__item header-nav__item-contacts">
                   <a>Контакты</a>
@@ -53,7 +53,7 @@
                   <a class="button-search button-search--mobile" href="#">
                     <img src="img/search-icon-mobile.png" alt="Поиск" width="32" height="30">
                   </a>
-                  <a class="button-search button-search--desktop" href="#">
+                  <a class="button-search button-search--desktop" href="#" tabindex="7">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	       width="26.079px" height="24.095px" viewBox="0 0 26.079 24.095" enable-background="new 0 0 26.079 24.095" xml:space="preserve">
                        <path fill="#482C3A" d="M25.082,19.42l-5.963-5.052c0.581-1.285,0.913-2.71,0.913-4.214C20.032,4.555,15.541,0,10.021,0
@@ -63,6 +63,12 @@
               	       c0-3.884,3.12-7.043,6.953-7.043c3.829,0,6.944,3.16,6.944,7.043C16.965,11.067,16.788,11.936,16.476,12.737z"/>
                     </svg>
                   </a>
+                </li>
+                <li class="header-nav__item header-nav__item-search header-nav__item--closed">
+                  <form class="form" action="index.html" method="post">
+                    <input class="form__field" type="text" name="search" placeholder="поиск по сайту">
+                    <button class="button-form" type="button" name="button">Найти</button>
+                  </form>
                 </li>
               </ul>
             </nav>
@@ -80,11 +86,14 @@
             <h2 class="details__caption">Стоматология DaVinci Clinic</h2>
             <p class="details__address">Москва, проспект Маршала Жукова, д. 51, метро &laquo;Полежаевская&raquo; /
               МЦК &laquo;Хорошёво&raquo;<br>метро &laquo;Октябрьское поле&raquo;</p>
-            <p class="details__phone">Телефон +7 (495) 150-33-50<br><a href="#" class="details__mark"></a>+7 (903) 232-67-09</p>
-            <p class="details__email">email: davinciclinic@mail.ru</p>
-            <p class="details__hours">Часы работы: с 09:00&ndash;21:00</p>
-            <a href="#" class="details__link details__link--google">посмотреть на Google-карте</a>
-            <a href="#" class="details__link details__link--yandex">посмотреть на Яндекс-карте</a>
+            <p class="details__phone details__phone--one"><b>Телефон </b><a href="tel:++74951503350" tabindex="9">+7 (495) 150-33-50</a></p>
+            <p class="details__phone details__phone--two"><a href="tel:++79032326709" tabindex="12">+7 (903) 232-67-09</a></p>
+            <a href="#" class="details__mark details__mark--whatsapp" tabindex="10"><img src="img/svg/WhatsApp-symbol.svg" alt="Позвонить по WhatsApp"></a>
+            <a href="#" class="details__mark details__mark--viber" tabindex="11"><img src="img/svg/Viber-symbol.svg" alt="Позвонить по Viber"></a>
+            <a class="details__email" href="mailto:davinciclinic@mail.ru" tabindex="13">email: davinciclinic@mail.ru</a>
+            <p class="details__hours">Часы работы: ежедневно с 09:00&ndash;21:00</p>
+            <a href="#" class="details__link details__link--google" tabindex="14">посмотреть на Google-карте</a>
+            <a href="#" class="details__link details__link--yandex" tabindex="15">посмотреть на Яндекс-карте</a>
           </div>
           <div class="details__map">
             <img src="img/map-contacts.png" alt="Местоположение клиники DaVinci на карте Москвы">
@@ -117,23 +126,23 @@
   <footer class="footer">
       <div class="footer__wrapper container">
         <div class="footer__logo footer__logo--mobile">
-          <img src="img/logo_footer-mobile.png" alt="DaVinci Clinic">
+          <a href="index.html"><img src="img/logo_footer-mobile.png" alt="DaVinci Clinic"></a>
         </div>
         <div class="footer__logo footer__logo--desktop">
-          <img src="img/logo_footer.png" alt="DaVinci Clinic">
+          <a href="index.html" tabindex="16"><img src="img/logo_footer.png" alt="DaVinci Clinic"></a>
         </div>
         <div class="footer__contacts">
-          <a class="footer__phone" href="tel:+74951503350">+7 (495) 150-33-50</a>
+          <a class="footer__phone" href="tel:+74951503350" tabindex="24">+7 (495) 150-33-50</a>
           <p class="footer__hours footer__hours--mobile">ежедневно c 9:00 до 21:00</p>
           <p class="footer__hours footer__hours--desktop">ежедневно<br>c 9:00 до 21:00</p>
         </div>
         <div class="footer__form">
           <div class="button-reg">
-            <a href="reg-form.html">Записаться<br> на прием</a>
+            <a href="reg-form.html" tabindex="23">Записаться<br> на прием</a>
           </div>
         </div>
         <div class="footer__map">
-          <a href="#" class="footer__marker">
+          <a href="#" class="footer__marker" tabindex="17">
             <div class="footer__marker footer__marker--active">
               <div class="footer__marker footer__marker--hover">
                 <div class="footer__marker footer__marker--regular">
@@ -141,31 +150,31 @@
               </div>
             </div>
           </a>
-          <a href="#" class="footer__address">Москва, проспект Маршала Жукова, 51</a>
+          <a href="#" class="footer__address" tabindex="18">Москва, проспект Маршала Жукова, 51</a>
         </div>
         <ul class="footer__social">
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/vk-mobile.svg" alt="Vkontakte" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/fb-mobile.svg" alt="Facebook" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/instagram-mobile.svg" alt="Instagram" width="48px" height="48px"></a></li>
           <li><a class="social__button social__button--mobile" href="#"><img src="img/svg/youtube-mobile.svg" alt="Youtube" width="48px" height="48px"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/vk.svg" alt="Vkontakte"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/fb.svg" alt="Facebook"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
-          <li><a class="social__button social__button--desktop" href="#"><img src="img/svg/youtube.svg" alt="Youtube"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="19"><img src="img/svg/vk.svg" alt="Vkontakte"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="20"><img src="img/svg/fb.svg" alt="Facebook"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="21"><img src="img/svg/instagram.svg" alt="Instagram"></a></li>
+          <li><a class="social__button social__button--desktop" href="#" tabindex="22"><img src="img/svg/youtube.svg" alt="Youtube"></a></li>
         </ul>
         <ul class="footer__list">
           <li class="footer__item">&copy; ООО "Фаворит" 2018</li>
           <li class="footer__item">
-            <a href="#">Реквизиты организации</a>
+            <a href="#" tabindex="25">Реквизиты организации</a>
           </li>
           <li class="footer__item">
-            <a href="#">Лицензия</a>
+            <a href="#" tabindex="26">Лицензия</a>
           </li>
           <li class="footer__item">
-            <a href="#">Политика конфиденциальности</a>
+            <a href="#" tabindex="27">Политика конфиденциальности</a>
           </li>
           <li class="footer__item">
-            <a href="#">Карта сайта</a>
+            <a href="#" tabindex="28">Карта сайта</a>
           </li>
         </ul>
       </div>
@@ -203,20 +212,39 @@
     </section>
 
   <script type="text/javascript">
-    var pageHeader = document.querySelector('.header');
-    var toggleHeader = document.querySelector('.header__toggle');
+      var pageHeader = document.querySelector('.header');
+      var toggleHeader = document.querySelector('.header__toggle');
+      var headerSearch = document.querySelector('.header-nav__item-search');
+      var buttonSearch = document.querySelector('.button-search--desktop');
 
-    pageHeader.classList.remove('header--nojs');
-    toggleHeader.addEventListener('click', function () {
-      if (pageHeader.classList.contains('header--closed')) {
-        pageHeader.classList.remove('header--closed');
-        pageHeader.classList.add('header--opened');
-      } else {
-        pageHeader.classList.add('header--closed');
-        pageHeader.classList.remove('header--opened');
-      }
-    });
-  </script>
+      pageHeader.classList.remove('header--nojs');
+      toggleHeader.addEventListener('click', function () {
+        if (pageHeader.classList.contains('header--closed')) {
+          pageHeader.classList.remove('header--closed');
+          pageHeader.classList.add('header--opened');
+        } else {
+          pageHeader.classList.add('header--closed');
+          pageHeader.classList.remove('header--opened');
+        }
+      });
+
+      buttonSearch.addEventListener('click', function () {
+        if (headerSearch.classList.contains('header-nav__item--closed')) {
+          headerSearch.classList.remove('header-nav__item--closed');
+          headerSearch.classList.add('header-nav__item--opened');
+        }
+      });
+
+      window.addEventListener("keydown", function(evt) {
+          if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (headerSearch.classList.contains('header-nav__item--opened')) {
+              headerSearch.classList.remove('header-nav__item--opened');
+              headerSearch.classList.add('header-nav__item--closed');
+            }
+          }
+        });
+    </script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
